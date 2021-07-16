@@ -1,10 +1,10 @@
 import {ApplicationCommandOptionData, CommandInteraction} from "discord.js";
-import AmpersandManager from "./AmpersandManager";
+import SlashClient from "./SlashClient";
 
 export default interface ICommand {
     name: string;
     description: string;
     options?: ApplicationCommandOptionData[];
     defaultPermission?: boolean;
-    run(client: AmpersandManager, interaction: CommandInteraction): Promise<any>;
+    run(client: SlashClient, interaction: CommandInteraction): Promise<any>;
 }

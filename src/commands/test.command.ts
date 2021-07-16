@@ -1,5 +1,5 @@
 import ICommand from "../classes/ICommand";
-import AmpersandManager from "../classes/AmpersandManager";
+import SlashClient from "../classes/AmpersandManager";
 import {ApplicationCommandOptionData, CommandInteraction} from "discord.js";
 
 export default class TestCommand implements ICommand {
@@ -13,7 +13,7 @@ export default class TestCommand implements ICommand {
             type: 'USER'
         }
     ];
-    async run(client: AmpersandManager, interaction: CommandInteraction): Promise<any> {
+    async run(client: SlashClient, interaction: CommandInteraction): Promise<any> {
         await interaction.reply(`You've choosen ${interaction.options.get('user').user.tag}`);
     }
 }

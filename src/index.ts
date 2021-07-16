@@ -1,2 +1,2 @@
-import AmpersandManager from "./classes/AmpersandManager";
-new AmpersandManager();
+import SlashClient from "./classes/SlashClient";
+new SlashClient();
