@@ -5,7 +5,7 @@ import IEvent from "./IEvent";
 import ICommand from "./ICommand";
 import { config } from 'dotenv';
 config();
-export default class AmpersandManager extends Client {
+export default class SlashClient extends Client {
     public commands: ICommand[];
     constructor() {
         super({intents: new Intents(Object.values(Intents.FLAGS).reduce((acc, p) => acc | p, 0))});
