@@ -1,5 +1,5 @@
 import ICommand from "../classes/ICommand";
-import SlashClient from "../classes/AmpersandManager";
+import SlashClient from "../classes/SlashClient";
 import {ApplicationCommandOptionData, CommandInteraction} from "discord.js";
 
 export default class TestCommand implements ICommand {
